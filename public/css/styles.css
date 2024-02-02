@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Open+Sans:ital,wght@1,500&family=Poppins:wght@300;400&family=Roboto:wght@100;400;500;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+ 
+}
+
+/* Header Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#expense-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#expense-form input {
+    margin-right: 20px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+
+input,
+select {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Table Styles */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+.leadandreports {
+    display: flex;
+    justify-content: end;
+    margin: 30px;
+}
+
+
+#pagination-container,#no-of-expenses,#prem-btn,#leaderboard,#reports {
+    display: flex;
+    justify-content: flex-end;
+}
+#download-btn,#link {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .expense-container2 table {
+        width: 100%;
+        font-size: 14px;
+    }
+}

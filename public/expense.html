@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <button id="prem-btn">Buy Premium</button>
+    <p id="prem-msg"></p>
+    <button id="leaderboard">Leaderboard</button>
+    <button id="reports">
+      <a href="reports.html">Reports</a>
+    </button>
+    <form id="expense-form">
+      <label for="amount">Expense Amount: </label>
+      <input type="text" id="amount" name="amount" required />
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required />
+      <label for="category">Expense Category:</label>
+      <select id="category" name="category">
+        <option value="grocery">Grocery</option>
+        <option value="medicines">Medicines</option>
+        <option value="Movies">Movies</option>
+        <option value="others">Others</option>
+      </select>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <table id="expense-table">
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="exp-container"></tbody>
+    </table>
+    <ul id="leaderboardStats"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/expense.js"></script>
+  </body>
+</html>
